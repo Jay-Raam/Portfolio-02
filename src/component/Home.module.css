@@ -1,0 +1,98 @@
+/* Home.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
+
+.home {
+  background-color: #ffffff;
+  text-align: center;
+  height: 36.625rem;
+}
+
+.home_container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7rem;
+    flex-direction: row-reverse;
+}
+.text {
+    width: 30.375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text1 {
+  font-size: 36px;
+  color: #000;
+  font-family: 'Cinzel', serif;
+}
+
+.text2 {
+  font-size: 18px;
+  color: #000;
+  margin-top: 10px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+.alt{
+  text-decoration: none;
+  color: white;
+}
+.btn {
+  display: flex;
+  padding: 12px 26px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  border-radius: 8px;
+  outline: none;
+  z-index: -1010;
+  border: none;
+background: rgb(156,99,213);
+background: linear-gradient(141deg, rgba(156,99,213,1) 0%, rgba(208,130,219,1) 80%);
+  color: white;
+  margin-top: 36px;
+}
+.btn:hover{
+    transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .one {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .home {
+  height: 42.625rem;
+  }
+
+  .text{
+    width: auto;
+  }
+  .text1 {
+    font-size: 28px;
+  }
+  .text2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 325px){
+    .image img{
+      height: auto;
+      margin-top: 36px;
+    }
+}

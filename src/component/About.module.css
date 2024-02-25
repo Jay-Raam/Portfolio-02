@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap");
+
+.container {
+    margin: 0 auto;
+    height: 600px;
+    margin-top: 40px;
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 844px;
+    width: 100%;
+    gap: 40px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+    top: 55px;
+    flex-direction: row-reverse;
+}
+
+.one img {
+  width: 287px;
+  height: auto;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+}
+
+
+.image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one h1 {
+  font-size: 36px;
+  text-align: center;
+}
+.text2 {
+  font-family: "Crimson Text", serif;
+  font-weight: 100;
+  color: black;
+  font-size: 16px;
+}
+.one p {
+  margin-top: 27px;
+}
+
+.one h3 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  padding: 12px 26px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 234px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background: rgb(156, 99, 213);
+  background: linear-gradient(
+    141deg,
+    rgba(156, 99, 213, 1) 0%,
+    rgba(208, 130, 219, 1) 80%
+  );
+  color: white;
+  margin-top: 36px;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px,
+    rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.alt {
+  text-decoration: none;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    height: 500px;
+  }
+
+  .one {
+    gap: 92px;
+  }
+
+  .one h1 {
+    font-size: 28px;
+    text-align: center;
+    width: auto;
+  }
+  .one p {
+    width: 385px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .one img {
+    width: 100%;
+    height: auto;
+  }
+  .one h3 {
+    font-size: 14px;
+  }
+
+  .image{
+    width: 35%;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .one img {
+    width: 100%;
+  }
+}
+
+/* Responsive design for screens with a maximum width of 425px */
+@media (max-width: 425px) {
+  .container {
+    height: 850px;
+  }
+
+  .one {
+    flex-direction: column;
+    gap: 53px;
+  }
+  .one h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .one p {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+  }
+  .btn {
+    margin: 0 auto;
+  }
+  .image{
+    width: 100%;
+  }
+}
